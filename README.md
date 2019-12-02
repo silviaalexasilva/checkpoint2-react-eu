@@ -19,6 +19,8 @@ You can use either [axios](https://github.com/axios/axios) or [fetch](https://de
 
 Think about `commit' regularly with an explicit message. For example: ``Create GameList and Game components``.
 
+**Friendly Tip:** before starting, make the *component tree* and *wireframes*! :)
+
 - Create a new React project named **list-games** using `create-react-app`.
 - Create 2 components `<GameList />` and `<Game />`.
 - Use `<GameList />` component to fetch from the API and display each game on a `<Game />` component.
