@@ -1,7 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios'
-import {Link} from 'react-router-dom'
-import './Game.css'
 
 class Screenshots extends React.Component {
   state = {
@@ -16,7 +15,7 @@ class Screenshots extends React.Component {
       // console.log(data);
       
       this.setState({game : data.filter(item => {
-        return item.id === id
+        return item.id == id
       }
         )})
     })
@@ -31,11 +30,11 @@ class Screenshots extends React.Component {
     return(
       <div>
         <Link to='/'>
-          <input type='button' value ='Go Back!'/>
+          <input className="buttons" type='button' value ='Back to Home'/>
         </Link>
 
         {this.state.game ? this.state.game[0].short_screenshots.map( screenshot => {
-          return <img src = {screenshot.image} alt={this.state.game[0].name}/>
+          return <img className="GameImg" src = {screenshot.image} alt={this.state.game[0].name}/>
         }) : 'loading' }
       </div>
     )

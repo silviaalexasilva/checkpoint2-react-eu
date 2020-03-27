@@ -9,12 +9,12 @@ class Gamelist extends React.Component {
       filtered : false
     }
   
-    handleFilterGames = () => {
+    FilterGames = () => {
       this.setState({filtered : !this.state.filtered})
   
     }
   
-    handleDelete = (arthur) => {
+    DeleteGames = (arthur) => {
       const newGamesList = this.state.games
       newGamesList.splice(arthur, 1)
       this.setState({ games : newGamesList })
