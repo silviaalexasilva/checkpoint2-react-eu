@@ -32,8 +32,8 @@ class Gamelist extends React.Component {
     render() {
       
       return(
-        <div class="main">
-          <input className="buttons" type="button" value={this.state.filtered ? "See All" : "Best Games"} onClick={this.handleFilterGames}/>
+        <div className="main">
+          <input className="buttons" type="button" value={this.state.filtered ? "See All" : "Best Games"} onClick={this.FilterGames}/>
   
           {this.state.filtered ? 
           this.state.games.filter(game => {
@@ -44,7 +44,7 @@ class Gamelist extends React.Component {
           })
           :
           this.state.games.map((game ,i )=>{
-            return <Game data = {game} index={i} remove={this.handleDelete}/>
+            return <Game data = {game} index={i} remove={this.DeleteGames}/>
           })}
   
         </div>

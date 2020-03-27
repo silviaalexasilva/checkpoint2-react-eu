@@ -28,7 +28,7 @@ class Screenshots extends React.Component {
   render(){
     console.log(this.state.game);
     return(
-      <div>
+      <div className="main">
         <Link to='/'>
           <input className="buttons" type='button' value ='Back to Home'/>
         </Link>

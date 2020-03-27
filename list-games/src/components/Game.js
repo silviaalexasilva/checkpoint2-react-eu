@@ -2,10 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Game.css'
 
-const Game = ({game, data, removeGame, remove}) =>{
-    const handleRemoveGame = () => {
-        removeGame(game)
-    }
+const Game = ({ data, index, remove}) =>{
+   console.log(data);
     return (
         <div>
             <h1 className="title">
@@ -34,7 +32,7 @@ const Game = ({game, data, removeGame, remove}) =>{
              <button className="buttonshots"><Link to={`/jeu/screenshots/${data.id}`}>Screens</Link></button>
                 
          <div className="erase">
-        <input className="erasebutton" type='button' onClick={()=>remove(handleRemoveGame)} value = 'Erase Game'/>
+        <input className="erasebutton" type='button' onClick={()=>remove(index)} value = 'Erase Game'/>
         </div>
         </div>
     </div>
