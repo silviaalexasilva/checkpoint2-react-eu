@@ -14,9 +14,9 @@ class Gamelist extends React.Component {
   
     }
   
-    DeleteGames = (arthur) => {
+    DeleteGames = (any) => {
       const newGamesList = this.state.games
-      newGamesList.splice(arthur, 1)
+      newGamesList.splice(any, 1)
       this.setState({ games : newGamesList })
     }
   

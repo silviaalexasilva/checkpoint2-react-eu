@@ -34,7 +34,7 @@ class Screenshots extends React.Component {
         </Link>
 
         {this.state.game ? this.state.game[0].short_screenshots.map( screenshot => {
-          return <img className="GameImg" src = {screenshot.image} alt={this.state.game[0].name}/>
+          return <img className="GameImage" src = {screenshot.image} alt={this.state.game[0].name}/>
         }) : 'loading' }
       </div>
     )

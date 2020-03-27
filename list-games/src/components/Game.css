@@ -1,4 +1,4 @@
-.GameImg{
+.GameImage{
     width : 50vw;
     height : auto;
     margin-left: 2vw;
@@ -8,20 +8,13 @@
 
 
 .title {
-width : 60vw;
 font-size: 2.4vw;
 color:  rgb(72, 72, 72);
-margin-left: 15vw;
+margin-left: 5%;
+text-align: center;
 
 }
 
-.erase {
-    width: 99vw;
-    text-align: center;
-    margin-top: 1vw;
-    margin-bottom: 3vw;
-    
-}
 
 span {
     font-size: 1rem;
@@ -42,6 +35,22 @@ position: fixed;
 background-color: rgb(250, 135, 34);
 }
 
+.buttonshots {
+    width: 5vw;
+    height: 1.8vw;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-left: 0vw;
+    background-color:rgb(228, 228, 228);
+    margin-top: 0vw;
+ }
+  
+
+.info {
+width: 50%;
+position: relative;
+
+}    
 .Types {
 margin-left: 2vw;
 margin-top: 0.5vw;
@@ -49,10 +58,24 @@ font-size: 1rem;
 color:black;
 }
 
+.action {
+    width: 50%;
+    position: relative;
+    margin-left: 94%;
+    margin-top: -3vw;
+    margin-bottom: 4vw;
 
+}
 .erasebutton {
     width: 5vw;
     height: 1.8vw;
-    background-color: rgb(228, 228, 227);
+    color: rgb(255, 1, 1);
+    background-color: rgb(254, 254, 254);
     font-weight: bold;
+    margin-top: 0.9vw;
+    }
+
+    :any-link {
+        text-decoration: none;
+        color: darkslategrey;
     }
