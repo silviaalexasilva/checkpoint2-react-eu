@@ -1,7 +1,6 @@
 .GameImage{
     width : 50vw;
     height : auto;
-    margin-left: 2vw;
     margin-top: 1vw;
 }
 
@@ -9,8 +8,9 @@
 
 .title {
 font-size: 2.4vw;
-color:  rgb(72, 72, 72);
+color:  rgb(58, 58, 58);
 margin-left: 5%;
+padding-top: 1vw;
 text-align: center;
 
 }
@@ -26,13 +26,13 @@ span {
 .buttons {
 width: 6vw;
 height: 1.8vw;
-margin-top: 0vw;
 color: rgb(255, 255, 255);
 font-weight: 600;
 font-size: 0.8rem;
 margin-left: 2vw;
 position: fixed;
 background-color: rgb(250, 135, 34);
+margin-top: -1vw;
 }
 
 .buttonshots {
@@ -52,7 +52,6 @@ position: relative;
 
 }    
 .Types {
-margin-left: 2vw;
 margin-top: 0.5vw;
 font-size: 1rem;
 color:black;
@@ -61,7 +60,7 @@ color:black;
 .action {
     width: 50%;
     position: relative;
-    margin-left: 94%;
+    margin-left: 90%;
     margin-top: -3vw;
     margin-bottom: 4vw;
 
@@ -79,3 +78,13 @@ color:black;
         text-decoration: none;
         color: darkslategrey;
     }
+
+.main {
+    width:50vw;
+    height : 2vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    padding-top: 2vw;
+    border: 1px solid rgb(222, 222, 222);
+
+}
